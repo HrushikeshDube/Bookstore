@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
-
+import axios from "axios";
 function Login() {
   const {
     register,
@@ -10,18 +10,33 @@ function Login() {
     reset, // <-- add this
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log("Form Data:", data);
-
-    // Perform login logic here...
-
-    // Reset input fields
-    reset();
+  const onSubmit = async (data) => {
+    const userInfo = {
+      email: data.email,
+      password: data.password,
+    };
+    await axios
+      .post("http://localhost:3000/user/login", userInfo)
+      .then((res) => {
+        console.log(res.data);
+        if (res.data) {
+          alert("Login Successfully");
+        }
+        localStorage.setItem("User", JSON.stringify(res.data));
+        window.location.reload();
+      })
+      .catch((err) => {
+        if (err.response) {
+          console.log("Error", err);
+          alert(`Error :  ${err.response.data.message}`);
+        }
+      });
+    reset(); // clear form fields after submission
   };
 
   return (
     <div>
-      <dialog id="my_modal_3" className="modal" open>
+      <dialog id="my_modal_3" className="modal z-9">
         <div className="modal-box">
           <form onSubmit={handleSubmit(onSubmit)}>
             <button

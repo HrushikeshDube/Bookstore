@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Login from "./Login";
-
+import { useAuth } from "./Context";
+import Logout from "./Logout";
 function Navbar() {
+  const [user, setauthuse] = useAuth();
+  console.log(user);
   const [sticky, setsticky] = useState(false);
   useEffect(() => {
     const handlescroll = () => {
@@ -126,14 +129,18 @@ function Navbar() {
               </svg>
             </label>
             <div>
-              <a
-                className="bg-black text-white p-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
-                onClick={() => {
-                  document.getElementById("my_modal_3").showModal();
-                }}
-              >
-                Login
-              </a>
+              {user ? (
+                <Logout />
+              ) : (
+                <button
+                  className="bg-black text-white p-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
+                  onClick={() => {
+                    document.getElementById("my_modal_3").showModal();
+                  }}
+                >
+                  Login
+                </button>
+              )}
             </div>
             <Login />
           </div>
