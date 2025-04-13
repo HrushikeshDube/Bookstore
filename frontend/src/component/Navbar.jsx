@@ -3,8 +3,8 @@ import Login from "./Login";
 import { useAuth } from "./Context";
 import Logout from "./Logout";
 function Navbar() {
-  const [user, setauthuse] = useAuth();
-  console.log(user);
+  const [authUser, setauthuser] = useAuth();
+
   const [sticky, setsticky] = useState(false);
   useEffect(() => {
     const handlescroll = () => {
@@ -129,7 +129,7 @@ function Navbar() {
               </svg>
             </label>
             <div>
-              {user ? (
+              {authUser ? (
                 <Logout />
               ) : (
                 <button

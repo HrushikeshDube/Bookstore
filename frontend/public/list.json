@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Adventure Book",
+    "title": "Join the thrilling adventures across mysterious lands.",
+    "price": 150,
+    "category": "Adventure",
+    "image": "https://img.freepik.com/free-vector/adventure-book-illustration.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Story Book",
+    "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341893.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Music Book",
+    "title": "Learn the basics of music and song composition.",
+    "price": 100,
+    "category": "Song",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341893.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Science Book",
+    "title": "Explore the wonders of physics and chemistry.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/science-book-concept-illustration.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Comic Book",
+    "title": "Follow the exciting tales of superheroes.",
+    "price": 50,
+    "category": "Comics",
+    "image": "https://img.freepik.com/free-vector/comic-book-template.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Cooking Book",
+    "title": "Delicious recipes from around the world.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/cooking-book-concept-illustration.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Fantasy Book",
+    "title": "Dive into a world of dragons and magic.",
+    "price": 180,
+    "category": "Fantasy",
+    "image": "https://img.freepik.com/free-vector/fantasy-book-illustration.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Kids Book",
+    "title": "Fun stories for young minds.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/kids-book-concept-illustration.jpg"
+  },
+  {
+    "id": 9,
+    "name": "History Book",
+    "title": "A journey through ancient civilizations.",
+    "price": 90,
+    "category": "History",
+    "image": "https://img.freepik.com/free-vector/history-book-concept.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Motivation Book",
+    "title": "Boost your inner strength and achieve your goals.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/motivation-book-cover.jpg"
+  }
+]
